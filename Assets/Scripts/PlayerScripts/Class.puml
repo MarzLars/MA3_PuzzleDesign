@@ -1,0 +1,90 @@
+﻿@startuml
+
+package "PlayerCharacter" {
+    class PlayerCharacter {
+        +Vector2 MovementVector
+        +bool IsGrounded
+        -float speed
+        -float jumpForce
+        -float dampTime
+        -float desiredRotationSpeed
+        -float accelerationTime
+        -float decelerationTime
+        -Vector3 _localVelocity
+        -Vector3 _dampVelocity
+        -Vector3 _verticalVelocity
+        -float _rotationBlendSpeed
+        -float _maxSpeed
+        -bool _jump
+        -bool _isJumping
+        -bool _canJump
+        -CharacterController _controller
+        +void Jump()
+    }
+
+    class PlayerCharacterPresenter {
+        -IPlayerCharacterModel playerCharacter
+        -IPlayerCharacterView playerCharacterView
+        +void HandleVectorMovementChanged()
+        +void HandleJumpTriggered()
+        +void InjectDependencies(IPlayerCharacterModel playerCharacter, IPlayerCharacterView playerCharacterView)
+    }
+
+    class PlayerCharacterView {
+        -Animator animator
+        -AudioSource jumpSound
+        +void UpdateMovementAnimation()
+        +void TriggerJumpAnimation()
+        +void DoJump()
+    }
+
+    class DependencyInjector {
+        +void Start()
+    }
+
+    PlayerCharacterPresenter o-- PlayerCharacter
+    PlayerCharacterPresenter o-- PlayerCharacterView
+    DependencyInjector -- PlayerCharacterPresenter
+
+    PlayerCharacterView -- Animator
+
+    PlayerCharacter -- CharacterController
+}
+
+package "Animations" {
+    class PlayAnim {
+        -Animator myAnimationController
+        -GameObject objectToEnable
+        -PlayableDirector director
+        -UnityEvent onTriggerEnterEvent
+    }
+
+    class PlayTimelineDoorOpen {
+        -PlayableDirector director
+    }
+
+    class Animator {
+    }
+
+    class PlayableDirector {
+    }
+
+    class UnityEvent {
+    }
+
+    class GameObject {
+    }
+
+    class Collider {
+    }
+
+    PlayAnim o-- Animator
+    PlayAnim o-- GameObject
+    PlayAnim o-- Collider
+    PlayAnim o-- PlayableDirector
+    PlayAnim o-- UnityEvent
+
+    PlayTimelineDoorOpen o-- PlayableDirector
+}
+
+@enduml
