@@ -360,7 +360,6 @@ GameObject:
   m_Component:
   - component: {fileID: 72432657}
   - component: {fileID: 72432659}
-  - component: {fileID: 72432658}
   m_Layer: 0
   m_Name: TriggerLogic
   m_TagString: Untagged
@@ -383,47 +382,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1619159127}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &72432658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 72432656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d2af1b59b63284cb2e554d270199c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myAnimationController: {fileID: 9366382}
-  onTriggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2022324905}
-        m_TargetAssemblyTypeName: DoorController, Assembly-CSharp
-        m_MethodName: OpenDoor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1087553978}
-        m_TargetAssemblyTypeName: PlayTimeLineDoorOpen, Assembly-CSharp
-        m_MethodName: StartTimeline
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  objectToEnable: {fileID: 1434991242}
 --- !u!65 &72432659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3231,7 +3189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431388892}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0026434422, y: 0.9951953, z: -0.028056273, w: -0.0937666}
+  m_LocalRotation: {x: -0.0026434422, y: 0.9951953, z: -0.028056275, w: -0.0937666}
   m_LocalPosition: {x: 7.1074853, y: -6.7634063, z: -15.995909}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3752,7 +3710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492443941}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.09409956, y: 0.8042119, z: 0.1323646, w: 0.5717238}
+  m_LocalRotation: {x: -0.094099596, y: 0.804212, z: 0.13236463, w: 0.5717238}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5251,7 +5209,6 @@ GameObject:
   m_Component:
   - component: {fileID: 757363915}
   - component: {fileID: 757363917}
-  - component: {fileID: 757363916}
   m_Layer: 0
   m_Name: TriggerLogic
   m_TagString: Untagged
@@ -5274,47 +5231,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1578596833}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &757363916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 757363914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d2af1b59b63284cb2e554d270199c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myAnimationController: {fileID: 546860407}
-  onTriggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2022324905}
-        m_TargetAssemblyTypeName: DoorController, Assembly-CSharp
-        m_MethodName: OpenDoor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1087553978}
-        m_TargetAssemblyTypeName: PlayTimeLineDoorOpen, Assembly-CSharp
-        m_MethodName: StartTimeline
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  objectToEnable: {fileID: 1434991242}
 --- !u!65 &757363917
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6643,7 +6559,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1081644146}
   - component: {fileID: 1081644148}
-  - component: {fileID: 1081644147}
   m_Layer: 0
   m_Name: TriggerLogic
   m_TagString: Untagged
@@ -6666,47 +6581,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 351144768}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1081644147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081644145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d2af1b59b63284cb2e554d270199c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myAnimationController: {fileID: 1114011712}
-  onTriggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2022324905}
-        m_TargetAssemblyTypeName: DoorController, Assembly-CSharp
-        m_MethodName: OpenDoor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1087553978}
-        m_TargetAssemblyTypeName: PlayTimeLineDoorOpen, Assembly-CSharp
-        m_MethodName: StartTimeline
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  objectToEnable: {fileID: 1434991242}
 --- !u!65 &1081644148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8278,7 +8152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290553136}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.01796958, y: 0.7700123, z: -0.021707973, w: 0.63740635}
+  m_LocalRotation: {x: 0.017969582, y: 0.7700123, z: -0.021707974, w: 0.63740635}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10336,7 +10210,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1604038892}
   - component: {fileID: 1604038894}
-  - component: {fileID: 1604038893}
   m_Layer: 0
   m_Name: TriggerLogic
   m_TagString: Untagged
@@ -10359,47 +10232,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 594470277}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1604038893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1604038891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d2af1b59b63284cb2e554d270199c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myAnimationController: {fileID: 961987932}
-  onTriggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2022324905}
-        m_TargetAssemblyTypeName: DoorController, Assembly-CSharp
-        m_MethodName: OpenDoor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1087553978}
-        m_TargetAssemblyTypeName: PlayTimeLineDoorOpen, Assembly-CSharp
-        m_MethodName: StartTimeline
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  objectToEnable: {fileID: 1434991242}
 --- !u!65 &1604038894
 BoxCollider:
   m_ObjectHideFlags: 0
