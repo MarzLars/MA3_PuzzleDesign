@@ -1,14 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RespawnSystem : MonoBehaviour
+namespace Systems
 {
-    private void OnTriggerEnter(Collider other)
+    public class RespawnSystem : MonoBehaviour
     {
-        if (other.CompareTag("Player"))
+        private void OnTriggerEnter(Collider other)
         {
-            // Reload the current scene
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (other.CompareTag("Player"))
+            {
+                // Reload the current scene
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
     }
 }

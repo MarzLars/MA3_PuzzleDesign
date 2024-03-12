@@ -1,12 +1,15 @@
 using UnityEngine;
 
-public class DoorController : MonoBehaviour
+namespace Puzzle.MA2_puzzle
 {
-    [SerializeField]
-    private Animator doorAnimator;
-
-    public void OpenDoor()
+    public class DoorController : MonoBehaviour
     {
-        doorAnimator.SetBool("isOpen", true);
+        [SerializeField]
+        private Animator doorAnimator;
+
+        public void OpenDoor()
+        {
+            doorAnimator.SetBool("isOpen", true);
+        }
     }
 }
