@@ -15,12 +15,12 @@ public class PlayerCharacter : MonoBehaviour, IPlayerCharacterModel
     [SerializeField]
     private float accelerationTime = 0.2f, decelerationTime = 0.1f;
     
+    private float _rotationBlendSpeed;
+    private float _maxSpeed;
+    
     private Vector3 _localVelocity;
     private Vector3 _dampVelocity;
     private Vector3 _verticalVelocity;
-    
-    private float _rotationBlendSpeed;
-    private float _maxSpeed;
    
     private bool _jump;
     private bool _isJumping;
