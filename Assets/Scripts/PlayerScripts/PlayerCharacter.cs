@@ -115,10 +115,8 @@ public class PlayerCharacter : MonoBehaviour, IPlayerCharacterModel
     
     public void Jump()
     {
-        if (_controller.isGrounded && _canJump)
-        {
-            _jump = true;
-            _canJump = false;
-        }
+        if (!_controller.isGrounded || !_canJump) return;
+        _jump = true;
+        _canJump = false;
     }
 }
