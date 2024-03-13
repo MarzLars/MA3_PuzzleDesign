@@ -1,10 +1,8 @@
 using UnityEngine;
-using UnityEngine.Events;
-
 public class PlayerCharacter : MonoBehaviour, IPlayerCharacterModel
 {
     public Vector2 MovementVector { get; set; }
-    public bool IsGrounded { get { return _controller.isGrounded; } }
+    public bool IsGrounded => _controller.isGrounded;
 
     [SerializeField] 
     private float speed;
